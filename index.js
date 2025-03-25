@@ -1,28 +1,37 @@
- var x="hmz";
- var x="hamza"; we can also redeclare
- x=12  we can also reasign value in var casse
- {
-     var x=4;
+//filter method
+let a=[1,2,3,4,5,6,7]
+let xy=a.filter((num)=>5<num)
+console.log(xy);
 
-// } x is accessble outside of block
-// var is a global scope
+//reduce method
+let zz=[1,2,3,4,5,6,7]
+let hh=zz.reduce((a,b)=>a+b)
+console.log(hh);
+
+//map method
+let az=[1,2,3,4,5,6]
+let ab=az.map((num)=>num*15)
+console.log(ab);
 
 
-// Let is LOcal scopr varible 
-// Let just can reassign value but not dedecalre varible
+//globel and local variabel
 
-// function xyz(){
-//     var ab=10;
-//     if(true){
-//         let ab=20;
-//         console.log(ab)
-//     }
-//     console.log(ab)
-// }
+function xyz() {
+    var ab=15;
+    if (true) {
+        let ab=16;
+        console.log(ab);
+        }
+    console.log(ab);
+    }
+   xyz();
+  // IIFE funnction
+ ( function sum(abc){
+      console.log(abc + abc)
 
-// xyz();
-
-// decaleration 
-// var a=10;
-// var a=20;
-// console.log(a)
+}(10))
+ (function(x){
+    return (function(y){
+         console.log(x)
+     })(2);
+ })(1);
