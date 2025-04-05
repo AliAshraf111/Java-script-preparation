@@ -1,7 +1,7 @@
 // local scope && global scope
 // let, var, const
 // let, const is a local scope variable
-
+// /a/a//a/
 // var
 // var x="hmz";
 // var x="hamza"; we can also redeclare
